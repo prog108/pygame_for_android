@@ -28,3 +28,5 @@ pip install distutils.
 
 
 Ako si napravio projekt u Windowsu, to nije nemoguće koristiti, ali ćeš možda trebati dodatno podešavanje ili pokretanje alata u WSL-u ili virtualnoj mašini s Linuxom.
+
+Za Python 3.10, distutils je često uklonjen iz standardnih paketa. Umjesto toga, preporučuje se korištenje setuptools. Međutim, ako trebate distutils za specifične potrebe, možete pokušati s instalacijom putem pip.
