@@ -32,6 +32,17 @@ Ako si napravio projekt u Windowsu, to nije nemoguće koristiti, ali ćeš možd
 Za Python 3.10, distutils je često uklonjen iz standardnih paketa. Umjesto toga, preporučuje se korištenje setuptools. Međutim, ako trebate distutils za specifične potrebe, možete pokušati s instalacijom putem pip.
 
 
+KIVY INSTALLATION ON UBUNTU:
+1) INSTALL DEPENDENCIES: sudo apt install python3-pip python3-setuptools python3-wheel
+                         sudo apt install libgl1-mesa-dev
+2) INSTALL VIRTUAL ENVIROMENTS GLOBALLY IF YOU HAVEN'T ALREADY. : sudo apt install python3-venv
+3) THROUGH TERMINAL NAVIGATE TO YOUR PROJECT FOLDER: python -m venv my_venv           'my_venv' is name of your choice
+4) ACTIVATE THE ENVIROMENT: source moj_venv/bin/activate
+5) INSTALL KIVY: pip install kivy[base]
+6) 
+
+
+
 
 
 
@@ -44,4 +55,7 @@ Using Ubuntu:
   REGARDLESS OF NOTIFICATION, TRY AGAIN STEP 2. THIS TIME IT SHOULD BE INSTALLED.
 4)pip3 install --user --upgrade Cython==0.29.33 virtualenv  # the --user should be removed if you do this in a venv
 5) AGAIN POSSIBLE ERROR IF THE VERSION OF UBUNTU YOU HAVE DOESN'T ALLOW THE INSTALLATIONS VIA: pip --user or pip install
-6) IF ERROR ON STEP 5) OCCURS: MAKE A VIRTUAL ENVIROMENT 
+6) IF ERROR ON STEP 5) OCCURS: MAKE A VIRTUAL ENVIROMENT
+7) INSTALL GLOBALLY THE PROGRAM FOR VIRTUAL ENVIROMENTS: sudo apt install python3-venv
+8) Navigate through terminal to your project folder and make a virtual enviroment with: python -m venv my_venv           my_venv is name of your choice
+9) 
