@@ -39,8 +39,16 @@ KIVY INSTALLATION ON UBUNTU:
 3) THROUGH TERMINAL NAVIGATE TO YOUR PROJECT FOLDER: python -m venv my_venv           'my_venv' is name of your choice
 4) ACTIVATE THE ENVIROMENT: source moj_venv/bin/activate
 5) INSTALL KIVY: pip install kivy[base]
-6) 
+6) YOU CAN DEACTIVATE THE ENVOROMENT FOR NOW. USE: deactivate
 
+KIVY INSTALLTION IN VISUAL STUDIO CODE (IF YOU USE THAT EDITOR):
+1) IN VSC OPEN THE PROJECT FOLDER.
+2) IN TERMINAL MAKE OR ACTIVATE VIRTUAL ENVIROMENT: SAME AS STEPS 3) AND 4) IN INSTRUCTIONS JUST ABOVE: KIVY INSTALLATION FOR UBUNTU
+   BE CAUTIOUS WITH THE DIRECTION OF '/'.
+3) INSTALL PIP IF NEEDED: pip install --upgrade pip setuptools wheel
+4) pip install kivy[base]
+5) IN VSC CHANGE INTERPRETER: USE ONE WITH: my_venv/bin/python.
+6) HERE YOU GO. THE MODUL KIVY IS RECOGNIZED.
 
 
 
@@ -58,4 +66,19 @@ Using Ubuntu:
 6) IF ERROR ON STEP 5) OCCURS: MAKE A VIRTUAL ENVIROMENT
 7) INSTALL GLOBALLY THE PROGRAM FOR VIRTUAL ENVIROMENTS: sudo apt install python3-venv
 8) Navigate through terminal to your project folder and make a virtual enviroment with: python -m venv my_venv           my_venv is name of your choice
-9) 
+9) ACTIVATE THE ENVIROMENT: source my_venv/bin/activate
+10) INSTALL CYPHON: pip3 install --user --upgrade Cython==0.29.33 virtualenv  # the --user should be removed if you do this in a venv
+    INT TERMINAL TYPE INSIDE ACTIVATED VIRTUAL ENVIROMENT: pip3 install --upgrade Cython==0.29.33 virtualenv
+11) deactivate 
+12) # add the following line at the end of your ~/.bashrc file
+    export PATH=$PATH:~/.local/bin/
+13) GO TO ROOT FOLDER: cd ~
+14) nano ~/.bashrc TO OPEN THE EDITOR
+15) WITH THE CURSOR GO TO THE END OF FILE AND PASTE: export PATH=$PATH:~/.local/bin/
+16) Ctrl + o     AND PRESS ENTER. THIS IS FOR SAVING CHANGES
+17) Ctrl + x     TO EXIT THE EDITOR
+18) source ~/.bashrc TO MAKE IT VALID GLOBALLY
+19) IF YOU ARE ABLE YOU CAN NOW INSTALL BUILDOZER GLOBALLY. OTHERWISE USE VIRTUAL ENVIROMENT.
+20) NAVIGATE AGAIN TO PROJECT FOLDER AND ACTIVATE THE ENVIROMENT
+21) pip install buildozer
+22) buildozer --version TO CHECK IF THE BUILDOZER IS INSTALLED.
