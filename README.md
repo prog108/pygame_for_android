@@ -78,9 +78,10 @@ Using Ubuntu:
 16) Ctrl + o     AND PRESS ENTER. THIS IS FOR SAVING CHANGES
 17) Ctrl + x     TO EXIT THE EDITOR
 18) source ~/.bashrc TO MAKE IT VALID GLOBALLY
-19) buildozer init TO CREATE .spec FILE
-20) buildozer -v android debug TO CREATE .APK
 21) IF YOU ARE ABLE YOU CAN NOW INSTALL BUILDOZER GLOBALLY. OTHERWISE USE VIRTUAL ENVIROMENT.
 22) NAVIGATE AGAIN TO PROJECT FOLDER AND ACTIVATE THE ENVIROMENT
 23) pip install buildozer
-24) buildozer --version TO CHECK IF THE BUILDOZER IS INSTALLED.
+24) buildozer --version NOW, YOU ARE ASSURE THAT YOU HAVE BUILDOZER INSTALLED
+25) buildozer init TO CREATE .spec FILE. THE NAME OF YOUR MAIN FILE SHOULD BE SAME AS HERE IN.SPEC: # (str) The name of the main Python file
+                                                                                                      source.main = main.py
+20) buildozer -v android debug TO CREATE .APK
